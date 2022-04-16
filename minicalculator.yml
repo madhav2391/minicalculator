@@ -4,6 +4,6 @@
   tasks:
     - name: Pull calculator image
       docker_image:
-        name: madhavpasumarthy/minicalculator
+        name: madhavpasumarthy/minicalculator:latest
         source: pull
     
