@@ -1,0 +1,9 @@
+---
+- name: Deploy docker img
+  hosts: all
+  tasks:
+    - name: Pull calculator image
+      docker_image:
+        name: madhavpasumarthy/minicalculator
+        source: pull
+    

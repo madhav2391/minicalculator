@@ -10,38 +10,40 @@ public class Minicalc {
             {
                 Minicalc calculator=new Minicalc();
                 Scanner scanner=new Scanner(System.in);
-                System.out.println("Hii, Welcome to Scientific Calculator!!");
-                System.out.println("Choose which operation to do, by selecting the corresponding number");
-                System.out.println("Press 1 to get square root \nPress 2 to get factorial\nPress 3 to get natural logarithm\nPress 4 to get power function");
+                System.out.println("This is my mini project. select an option");
+                System.out.println("1: square root");
+                System.out.println("2: factorial");
+                System.out.println("3: natural logarithm");
+                System.out.println("4: power function");
                 int input=scanner.nextInt();
                 if(input==1)
                 {
-                    System.out.println("Enter the number");
-                    System.out.println("Square root result is : " + calculator.root(scanner.nextDouble()));
+                    System.out.println("Enter a number");
+                    System.out.println("Square root of the given number is : " + calculator.root(scanner.nextDouble()));
                 }
                 else if(input==3)
                 {
-                    System.out.println("Enter the number");
-                    System.out.println("Natural logarithm result is : " + calculator.log(scanner.nextDouble()));
+                    System.out.println("Enter a number");
+                    System.out.println("Natural logarithm of the given number is : " + calculator.log(scanner.nextDouble()));
                 }
                 else if(input==2)
                 {
-                    System.out.println("Enter the number");
-                    System.out.println("Factorial result is : " + calculator.factorial(scanner.nextInt()));
+                    System.out.println("Enter a number");
+                    System.out.println("Factorial of the given number is  : " + calculator.factorial(scanner.nextInt()));
                 }
                 else if(input==4)
                 {
-                    System.out.println("Enter the numbers");
-                    System.out.println("Power function result is : " + calculator.power(scanner.nextDouble(),scanner.nextDouble()));
+                    System.out.println("Enter a numbers");
+                    System.out.println("Power function of the given number is : " + calculator.power(scanner.nextDouble(),scanner.nextDouble()));
                 }
                 else
-                    System.out.println("No corresponding operation for the given input :(");
-                System.out.println("Done, Bye!!");
+                    System.out.println("Wrong input");
+                System.out.println("cool stuff byeeee");
             }
             catch(InputMismatchException error)
             {
-                System.out.println("Invalid input, Entered input is not of the expected type");
-                logger.error("Invalid input, Entered input is not of the expected type");
+                System.out.println("Invalid input type");
+                logger.error("Invalid input type");
                 return;
             }
         }
