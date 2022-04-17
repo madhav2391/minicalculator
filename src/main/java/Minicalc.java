@@ -10,7 +10,7 @@ public class Minicalc {
             {
                 Minicalc calculator=new Minicalc();
                 Scanner scanner=new Scanner(System.in);
-                System.out.println("This is my mini project");
+                System.out.println("Welcome !! This is my mini project");
 
                 while(true) {
                     System.out.println("Select an option");
