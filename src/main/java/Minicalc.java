@@ -15,36 +15,36 @@ public class Minicalc {
                 System.out.println("2: factorial");
                 System.out.println("3: natural logarithm");
                 System.out.println("4: power function");
-                int input=scanner.nextInt();
-                if(input==1)
-                {
-                    System.out.println("Enter a number");
-                    System.out.println("Square root of the given number is : " + calculator.root(scanner.nextDouble()));
+                System.out.println("Any other number to exit");
+                while(true) {
+                    int input = scanner.nextInt();
+                    if (input == 1) {
+                        System.out.println("Enter a number");
+                        System.out.println("Square root of the given number is : " + calculator.root(scanner.nextDouble()));
+                    }
+                    else if (input == 2) {
+                        System.out.println("Enter a number");
+                        System.out.println("Factorial of the given number is  : " + calculator.factorial(scanner.nextInt()));
+                    }
+                    else if (input == 3) {
+                        System.out.println("Enter a number");
+                        System.out.println("Natural logarithm of the given number is : " + calculator.log(scanner.nextDouble()));
+                    }
+                    else if (input == 4) {
+                        System.out.println("Enter a numbers");
+                        System.out.println("Power function of the given number is : " + calculator.power(scanner.nextDouble(), scanner.nextDouble()));
+                    }
+                    else {
+                        System.out.println("exit option choosed");
+                        break;
+                    }
                 }
-                else if(input==3)
-                {
-                    System.out.println("Enter a number");
-                    System.out.println("Natural logarithm of the given number is : " + calculator.log(scanner.nextDouble()));
-                }
-                else if(input==2)
-                {
-                    System.out.println("Enter a number");
-                    System.out.println("Factorial of the given number is  : " + calculator.factorial(scanner.nextInt()));
-                }
-                else if(input==4)
-                {
-                    System.out.println("Enter a numbers");
-                    System.out.println("Power function of the given number is : " + calculator.power(scanner.nextDouble(),scanner.nextDouble()));
-                }
-                else
-                    System.out.println("Wrong input");
                 System.out.println("cool stuff byeeee");
             }
             catch(InputMismatchException error)
             {
                 System.out.println("Invalid input type");
                 logger.error("Invalid input type");
-                return;
             }
         }
         //These functions are not defined over the entire real range. So, for inputs out of the domains, nan is returned.
