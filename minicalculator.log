@@ -14,19 +14,3 @@
 2022-04-17 02:50:10.306 [Minicalc.java] INFO  Minicalc - [RESULT - POWER] - 8.0
 2022-04-17 02:50:10.309 [Minicalc.java] INFO  Minicalc - [ROOT] - 17.0
 2022-04-17 02:50:10.310 [Minicalc.java] INFO  Minicalc - [RESULT - ROOT] - 4.123105625617661
-2022-04-17 13:06:47.393 [Minicalc.java] INFO  Minicalc - [FACTORIAL] - 5
-2022-04-17 13:06:47.397 [Minicalc.java] INFO  Minicalc - [RESULT - FACTORIAL] - 120.0
-2022-04-17 13:06:47.398 [Minicalc.java] INFO  Minicalc - [LOG] - 245.256
-2022-04-17 13:06:47.398 [Minicalc.java] INFO  Minicalc - [RESULT - LOG] - 5.502302562978017
-2022-04-17 13:06:47.399 [Minicalc.java] INFO  Minicalc - [ROOT] - 16.0
-2022-04-17 13:06:47.399 [Minicalc.java] INFO  Minicalc - [RESULT - ROOT] - 4.0
-2022-04-17 13:06:47.399 [Minicalc.java] INFO  Minicalc - [LOG] - 145.256
-2022-04-17 13:06:47.399 [Minicalc.java] INFO  Minicalc - [RESULT - LOG] - 4.978497702968366
-2022-04-17 13:06:47.400 [Minicalc.java] INFO  Minicalc - [POWER] - 3.0, 2.0
-2022-04-17 13:06:47.400 [Minicalc.java] INFO  Minicalc - [RESULT - POWER] - 9.0
-2022-04-17 13:06:47.401 [Minicalc.java] INFO  Minicalc - [FACTORIAL] - 6
-2022-04-17 13:06:47.401 [Minicalc.java] INFO  Minicalc - [RESULT - FACTORIAL] - 720.0
-2022-04-17 13:06:47.401 [Minicalc.java] INFO  Minicalc - [POWER] - 2.0, 3.0
-2022-04-17 13:06:47.401 [Minicalc.java] INFO  Minicalc - [RESULT - POWER] - 8.0
-2022-04-17 13:06:47.402 [Minicalc.java] INFO  Minicalc - [ROOT] - 17.0
-2022-04-17 13:06:47.402 [Minicalc.java] INFO  Minicalc - [RESULT - ROOT] - 4.123105625617661
