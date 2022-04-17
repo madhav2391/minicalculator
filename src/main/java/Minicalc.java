@@ -10,13 +10,14 @@ public class Minicalc {
             {
                 Minicalc calculator=new Minicalc();
                 Scanner scanner=new Scanner(System.in);
-                System.out.println("This is my mini project. select an option");
-                System.out.println("1: square root");
-                System.out.println("2: factorial");
-                System.out.println("3: natural logarithm");
-                System.out.println("4: power function");
-                System.out.println("Any other number to exit");
+
                 while(true) {
+                    System.out.println("This is my mini project. select an option");
+                    System.out.println("1: square root");
+                    System.out.println("2: factorial");
+                    System.out.println("3: natural logarithm");
+                    System.out.println("4: power function");
+                    System.out.println("Any other number to exit");
                     int input = scanner.nextInt();
                     if (input == 1) {
                         System.out.println("Enter a number");
