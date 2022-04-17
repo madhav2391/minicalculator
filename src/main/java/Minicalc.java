@@ -10,9 +10,10 @@ public class Minicalc {
             {
                 Minicalc calculator=new Minicalc();
                 Scanner scanner=new Scanner(System.in);
+                System.out.println("This is my mini project");
 
                 while(true) {
-                    System.out.println("This is my mini project. select an option");
+                    System.out.println("Select an option");
                     System.out.println("1: square root");
                     System.out.println("2: factorial");
                     System.out.println("3: natural logarithm");
