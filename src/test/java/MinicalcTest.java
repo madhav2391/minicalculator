@@ -2,56 +2,55 @@
 import org.junit.Test;
 
 public class MinicalcTest {
-    private static final double DELTA = 1e-15;
+    private static final double DELTA = 1e-11;
     Minicalc calculator = new Minicalc();
-    //TruePositive
     @Test
-    public void test_root() {
-        double actual=calculator.root(16.0);
-        double exp=4.0;
+    public void test_root_TruePositive() {
+        double actual=calculator.root(121.0);
+        double exp=11.0;
         assertEquals(actual,exp, DELTA);
     }
     @Test
-    public void test_fact() {
-        double actual=calculator.factorial(5);
-        double exp=120;
+    public void test_fact_TruePositive() {
+        double actual=calculator.factorial(7);
+        double exp=5040;
         assertEquals(actual,exp, DELTA);
     }
     @Test
-    public void test_log() {
-        double actual=calculator.log(145.256);
-        double exp=4.978497702968366;
+    public void test_ln_TruePositive() {
+        double actual=calculator.log(1096.63315843);
+        double exp=7;
         assertEquals(actual,exp, DELTA);
     }
     @Test
-    public void test_power() {
-        double actual=calculator.power(2.0,3.0);
-        double exp=8.0;
+    public void test_power_TruePositive() {
+        double actual=calculator.power(3.0,5.0);
+        double exp=243.0;
         assertEquals(actual,exp, DELTA);
     }
-    //FalsePositive
+
     @Test
-    public void test_root2() {
-        double actual=calculator.root(17.0);
-        double exp=4.0;
+    public void test_root_FalsePositive() {
+        double actual=calculator.root(645.0);
+        double exp=6.0;
         assertNotEquals(actual,exp, DELTA);
     }
     @Test
-    public void test_fact2() {
-        double actual=calculator.factorial(6);
-        double exp=120;
+    public void test_fact_FalsePositive() {
+        double actual=calculator.factorial(3);
+        double exp=3241;
         assertNotEquals(actual,exp, DELTA);
     }
     @Test
-    public void test_log2() {
-        double actual=calculator.log(245.256);
-        double exp=4.978497702968366;
+    public void test_ln_FalsePositive() {
+        double actual=calculator.log(52342);
+        double exp=6.0;
         assertNotEquals(actual,exp, DELTA);
     }
     @Test
-    public void test_power2() {
-        double actual=calculator.power(3.0,2.0);
-        double exp=8.0;
+    public void test_power_FalsePositive() {
+        double actual=calculator.power(5.0,3.0);
+        double exp=2.0;
         assertNotEquals(actual,exp, DELTA);
     }
 }

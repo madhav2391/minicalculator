@@ -49,38 +49,37 @@ public class Minicalc {
                 logger.error("Invalid input type");
             }
         }
-        //These functions are not defined over the entire real range. So, for inputs out of the domains, nan is returned.
-        public double root(double number1)
+        public double root(double n)
         {
-            logger.info("[ROOT] - " + number1);
-            double return_val = Math.sqrt(number1);
-            logger.info("[RESULT - ROOT] - " + return_val);
-            return return_val;
+            logger.info("Root - " + n);
+            double ret = Math.sqrt(n);
+            logger.info("ResultRoot - " + ret);
+            return ret;
         }
-        public double factorial(int number1)
+        public double factorial(int n)
         {
-            logger.info("[FACTORIAL] - " + number1);
-            if(number1<0)
+            logger.info("Factorial - " + n);
+            if(n<0)
                 return Double.NaN;
-            double fact=1;
-            for(int i=1;i<=number1;i++)
-                fact=fact*i;
-            logger.info("[RESULT - FACTORIAL] - " + fact);
-            return fact;
+            double ret=1;
+            for(int i=1;i<=n;i++)
+                ret=ret*i;
+            logger.info("ResultFactorial - " + ret);
+            return ret;
         }
-        public double log(double number1)
+        public double log(double n)
         {
-            logger.info("[LOG] - " + number1);
-            double return_val = Math.log(number1);
-            logger.info("[RESULT - LOG] - " + return_val);
-            return return_val;
+            logger.info("Log - " + n);
+            double ret = Math.log(n);
+            logger.info("ResultLog- " + ret);
+            return ret;
         }
-        public double power(double number1, double number2)
+        public double power(double bas, double pow)
         {
-            logger.info("[POWER] - " + number1 + ", " + number2);
-            double return_val = Math.pow(number1 , number2);
-            logger.info("[RESULT - POWER] - " + return_val);
-            return return_val;
+            logger.info("Power - " + bas + ", " + pow);
+            double ret = Math.pow(bas , pow);
+            logger.info("ResultPower - " + ret);
+            return ret;
         }
 }
 
