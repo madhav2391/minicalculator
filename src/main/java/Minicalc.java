@@ -34,7 +34,7 @@ public class Minicalc {
                     }
                     else if (input == 4) {
                         System.out.println("Enter a numbers");
-                        System.out.println("Power function of the given number is : " + calculator.power(scanner.nextDouble(), scanner.nextDouble()));
+                        System.out.println("Power function of the given number is: " + calculator.power(scanner.nextDouble(), scanner.nextDouble()));
                     }
                     else {
                         System.out.println("exit option choosed");
